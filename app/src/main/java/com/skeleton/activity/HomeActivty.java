@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import com.skeleton.R;
 
 /**
- * Get Ready for your perfect match  :p  :D  .
+ * Get Ready for your perfect match  :p  :D  ..
  */
 public class HomeActivty extends AppCompatActivity {
     private ImageView ivToolbarbtn, ivMenu;
