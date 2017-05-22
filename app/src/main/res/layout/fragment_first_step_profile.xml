@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/spacing_normal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_normal">
+
+        <ImageView
+            android:id="@+id/ivStepCompleteBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/background_parts"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ivStepCompleteBackground"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/one_step"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_small">
+
+        <TextView
+            android:id="@+id/tvSelector1"
+            style="@style/TVselector"/>
+
+        <TextView
+            android:id="@+id/tvSelector2"
+            style="@style/TVselector"/>
+
+        <TextView
+            android:id="@+id/tvSelector3"
+            style="@style/TVselector"/>
+
+        <TextView
+            android:id="@+id/tvSelector4"
+            style="@style/TVselector"/>
+
+        <TextView
+            android:id="@+id/tvSelector5"
+            style="@style/TVselector"/>
+
+        <TextView
+            android:id="@+id/tvSelector6"
+            style="@style/TVselector"/>
+
+        <TextView
+            android:id="@+id/tvSelector7"
+            style="@style/TVselector"/>
+
+        <TextView
+            android:id="@+id/tvSelector8"
+            style="@style/TVselector"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:id="@+id/etRelationshipHistory"
+                style="@style/EtSpinnerTheme"
+                android:hint="@string/edittext_msg_relationship_history"
+                />
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:id="@+id/etEthnicity"
+                style="@style/EtSpinnerTheme"
+                android:hint="@string/edittext_msg_ethnicity"
+                />
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:id="@+id/etReligion"
+                style="@style/EtSpinnerTheme"
+                android:hint="@string/edittext_msg_religion"
+                />
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:id="@+id/etHeight"
+                style="@style/EtSpinnerTheme"
+                android:hint="@string/edittext_msg_height"
+                />
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:id="@+id/etBodyType"
+                style="@style/EtSpinnerTheme"
+                android:hint="@string/edittext_msg_body_type"
+                />
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:id="@+id/etSmoking"
+                style="@style/EtSpinnerTheme"
+                android:hint="@string/edittext_msg_smoking"
+                />
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:id="@+id/etDrinking"
+                style="@style/EtSpinnerTheme"
+                android:hint="@string/edittext_msg_drinking"
+                />
+
+            <com.skeleton.util.customview.MaterialEditText
+                android:id="@+id/etOrientation"
+                style="@style/EtSpinnerTheme"
+                android:hint="@string/edittext_msg_orientation"
+                />
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/btnTheme"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:text="@string/button_next"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
