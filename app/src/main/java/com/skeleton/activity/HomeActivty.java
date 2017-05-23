@@ -16,7 +16,7 @@ public class HomeActivty extends AppCompatActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_activty);
+        setContentView(R.layout.activity_home);
         ivMenu = (ImageView) findViewById(R.id.ivMenu);
         ivToolbarbtn = (ImageView) findViewById(R.id.ivToolbarBtn);
         ivMenu.setVisibility(View.VISIBLE);

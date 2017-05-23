@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.widget.FrameLayout;
 
 import com.skeleton.R;
 import com.skeleton.fragment.VerifiyOTPFragment;
@@ -19,7 +18,6 @@ public class OTPActivity extends BaseActivity {
         setContentView(R.layout.activity_otp);
         VerifiyOTPFragment verifiyOTPFragment = new VerifiyOTPFragment();
         replaceFragment(verifiyOTPFragment);
-        FrameLayout fmDisplayOTPFollow = (FrameLayout) findViewById(R.id.fmDisplayOTPFollow);
     }
 
     /**
@@ -30,7 +28,7 @@ public class OTPActivity extends BaseActivity {
     public void replaceFragment(final Fragment fragment) {
         FragmentManager fM = getSupportFragmentManager();
         FragmentTransaction ft = fM.beginTransaction();
-        ft.replace(R.id.fmDisplayOTPFollow, fragment);
+        ft.replace(R.id.frameOTP, fragment);
         ft.commit();
     }
 }

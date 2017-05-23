@@ -42,8 +42,7 @@
         android:id="@+id/tvInterestName"
         style="@style/TvTheme"
         android:layout_width="wrap_content"
-        android:layout_below="@+id/ivInterest"
         android:layout_gravity="center"
-        android:text="Charity"
+        android:text="@string/charity"
         android:textColor="@color/black"/>
 </LinearLayout>

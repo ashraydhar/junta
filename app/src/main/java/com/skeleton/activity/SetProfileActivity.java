@@ -82,12 +82,12 @@ public class SetProfileActivity extends AppCompatActivity {
                 .enqueue(new ResponseResolver<CommonResponse>(this, true, true) {
                     @Override
                     public void success(final CommonResponse commonResponse) {
-                        Log.d("debug", commonResponse.getStatusCode());
+
                     }
 
                     @Override
                     public void failure(final APIError error) {
-                        Log.d("debug", error.getMessage());
+
                     }
                 });
     }

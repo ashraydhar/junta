@@ -82,7 +82,7 @@ public class SignInSignUpActivity extends BaseActivity {
 
                 @Override
                 public void failure(final APIError error) {
-                    android.util.Log.e("debug", error.getMessage());
+
                 }
             });
         }

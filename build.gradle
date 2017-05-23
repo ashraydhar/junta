@@ -21,7 +21,7 @@ allprojects {
         showViolations = true
         configFile file("../checkStyleConfig/checkstyle.xml")
         source 'src/main/java'
-        include '**/*.java'
+        exclude '**/*.java'
         exclude '**/gen/**'
         exclude '**/constant/**'
         exclude '**/R.java'

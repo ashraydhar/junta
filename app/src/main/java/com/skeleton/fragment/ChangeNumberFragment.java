@@ -98,14 +98,13 @@ public class ChangeNumberFragment extends BaseFragment {
                 Log.d("debug", response.getStatusCode().toString());
                 if ("200".equals(response.getStatusCode().toString())) {
                     CommonData.setUserData(response.getData().getUserDetails());
-                    Log.d("debug", CommonData.getUserData().getPhoneNo());
                     ((OTPActivity) getActivity()).replaceFragment(new VerifiyOTPFragment());
                 }
             }
 
             @Override
             public void failure(final APIError error) {
-                Log.e("debug", error.getMessage());
+
             }
         });
     }
